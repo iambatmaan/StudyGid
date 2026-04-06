@@ -1,0 +1,19 @@
+<header class="site-header glass">
+  <div class="header-inner">
+    <a href="{{ url_for('index') }}" class="logo">Studygid</a>
+    <nav class="nav-main" aria-label="Asosiy menyu">
+      <a href="{{ url_for('index') }}#about" data-i18n="nav_about">Biz haqimizda</a>
+      <a href="{{ url_for('guide') }}" data-i18n="nav_ai">AI yo'riq</a>
+      <a href="{{ url_for('quiz') }}" data-i18n="nav_quiz">Testlar</a>
+      <a href="{{ url_for('index') }}#contact" data-i18n="nav_contact">Aloqa</a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang-box" role="group" aria-label="Til tanlash">
+        <button type="button" class="lang-btn is-on" data-lang="uz" aria-pressed="true">UZ</button>
+        <button type="button" class="lang-btn" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <button type="button" class="nav-toggle" aria-label="Menyuni ochish" aria-expanded="false"></button>
+      <button type="button" class="btn btn-primary btn-auth" data-open-auth data-i18n="nav_auth">Kirish / Ro'yxatdan o'tish</button>
+    </div>
+  </div>
+</header>
